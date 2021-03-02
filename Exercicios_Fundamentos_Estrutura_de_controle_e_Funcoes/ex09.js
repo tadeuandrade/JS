@@ -10,29 +10,39 @@
 
 
 
-let n = 84
-let proximo = n + 1;
+// let n = 84
+// let proximo = n + 1;
 
-while (!(proximo % 5 === 0)) {
-    proximo++;
-}
+// while (!(proximo % 5 === 0)) {
+//     proximo++;
+// }
 
 
-if ((proximo - n) < 3) {
-    if (proximo >= 40) {
-        n = proximo
-        console.log(n + ' aprovado');
-    }
-} else {
-    console.log(n + ' reprovado');
-}
+// if ((proximo - n) < 3) {
+//     if (proximo >= 40) {
+//         n = proximo
+//         console.log(n + ' aprovado');
+//     }
+// } else {
+//     console.log(n + ' reprovado');
+// }
 
 
 classifica_nota = (n) => {
-    if (n >= 40) {
-        return 'Aprovado'
+    let notacorrigida = arredondar(n);
+    if (notacorrigida >= 40) {
+        return 'Aprovado ' + notacorrigida;
+    } else {
+        return 'Reprovado ' + notacorrigida;
+    }
+}
+arredondar = (n) => {
+    if (n % 5 > 2) {
+        return n + (5 - (n % 5));
+    } else {
+        return n;
     }
 }
 
-
+console.log(classifica_nota(37));
 
