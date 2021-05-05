@@ -3,10 +3,17 @@
 // três notas, a média calculada e uma mensagem "APROVADO" se a média for maior ou igual a 5 e"REPROVADO" se a 
 // média for menor que 5. Repita a operação até que o código lido seja negativo.
 
-verificanota = (aluno, notas) => {
+verificanota = (codAluno, nota1, nota2, nota3) => {
+    let notas = []
+    notas.push(nota1)
+    notas.push(nota2)
+    notas.push(nota3)
+    notas.sort((a, b) => a < b ? 1 : -1)
+    console.log('Aluno ' aluno)
     for (let i = 0; i < notas.length; i++) {
-        console.log(notas[i]);
+        console.log(notas[i])
     }
 }
 
-verificanota(1, [5, 2, 6]);
+verificanota(1, [5, 2, 6])
+
