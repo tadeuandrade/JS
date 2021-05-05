@@ -5,7 +5,7 @@ ao tamanho de seus lados. (Neste exemplo deve-se abstrair as condições matemá
 triângulo).*/
 
 
-verificatriangulo = (n1, n2, n3) => {
+verificatriangulo = (n1, n2, n3) => {}
     if(n1 === n2 && n2 ===n3){
         console.log('Equilátero')
     } else if(n1 === n2 || n1 === n3 || n2 === n3){
