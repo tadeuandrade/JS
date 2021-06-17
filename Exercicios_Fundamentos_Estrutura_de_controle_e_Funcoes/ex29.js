@@ -12,3 +12,6 @@ intervalo = (vet) => {
 }
 
 intervalo([1,2,15,18,30,33,34])
+
+fdsfd 
+
