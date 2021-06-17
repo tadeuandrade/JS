@@ -9,11 +9,11 @@ verificanota = (codAluno, nota1, nota2, nota3) => {
     notas.push(nota2)
     notas.push(nota3)
     notas.sort((a, b) => a < b ? 1 : -1)
-    console.log('Aluno ' aluno)
-    for (let i = 0; i < notas.length; i++) {
-        console.log(notas[i])
-    }
+
+    let mediaFinal = (notas[0]*4 + notas[1] *3 + notas[2]*3)/10
+    console.log(`Codigo do Aluno: ${codAluno}. Notas: ${nota1}, ${nota2}, ${nota3}. ${mediaFinal < 5 ? 'Reprovado': 'Aprovado'}`)
+
 }
 
-verificanota(1, [5, 2, 6])
+verificanota(123, 2.8,6,3.5)
 
