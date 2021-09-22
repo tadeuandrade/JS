@@ -23,7 +23,6 @@ geraVarios = () => {
 console.time('promise')
 geraVarios().then(console.log)
     .then(() => {
-        console.timeLog('promise')
         console.timeEnd('promise')
     })
 
